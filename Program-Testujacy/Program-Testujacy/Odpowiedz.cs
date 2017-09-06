@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Program_Testujacy
 {
+    /// <summary>
+    /// Klasa przechowująca dane o odpowiedzi
+    /// </summary>
     public class Odpowiedz
     {
         public string TrescOdpowiedzi { get; private set; }

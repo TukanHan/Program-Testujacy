@@ -8,6 +8,9 @@ namespace Program_Testujacy
 {
     public enum TrybPytania { Jednokrotne, Wielokrotne };
 
+    /// <summary>
+    /// Klasa przechowująca strukturę pojedyńczego pytania
+    /// </summary>
     public class Pytanie
     {
         public TrybPytania TrybPytania { get; private set; }

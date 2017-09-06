@@ -16,6 +16,7 @@ namespace Program_Testujacy
 {
     /// <summary>
     /// Interaction logic for OknoOProgramie.xaml
+    /// Okienko z informacjami o programie
     /// </summary>
     public partial class OknoOProgramie : Window
     {

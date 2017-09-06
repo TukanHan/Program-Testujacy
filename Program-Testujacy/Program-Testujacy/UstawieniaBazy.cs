@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Program_Testujacy
 {
+    /// <summary>
+    /// Klasa przechowująca dane o bazie
+    /// </summary>
     public class UstawieniaBazy
     {
         public string NazwaBazy { get; private set; }

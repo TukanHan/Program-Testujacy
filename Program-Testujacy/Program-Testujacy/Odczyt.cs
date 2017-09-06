@@ -8,6 +8,9 @@ using System.Windows;
 
 namespace Program_Testujacy
 {
+    /// <summary>
+    /// Statyczna klasa odpowiedzialna za odczyt baz danych
+    /// </summary>
     static class Odczyt
     {
         private static Encoding Kodowanie = Encoding.GetEncoding("Windows-1250");

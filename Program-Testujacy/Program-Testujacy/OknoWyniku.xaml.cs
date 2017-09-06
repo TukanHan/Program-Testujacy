@@ -17,6 +17,7 @@ namespace Program_Testujacy
 {
     /// <summary>
     /// Interaction logic for OknoWyniku.xaml
+    /// Miejsce które wyświetla rezultat egzaminu
     /// </summary>
     public partial class OknoWyniku : UserControl
     {

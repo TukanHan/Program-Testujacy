@@ -20,6 +20,7 @@ namespace Program_Testujacy
 {
     /// <summary>
     /// Interaction logic for OknoWyborBazy.xaml
+    /// Miejsce startowe, wczytuje i wyświetla dostępne dla programu bazy
     /// </summary>
     public partial class OknoWyborBazy : UserControl
     {

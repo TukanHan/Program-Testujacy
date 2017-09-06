@@ -17,6 +17,7 @@ namespace Program_Testujacy
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
+    /// Główny węzeł aplikacji, z tego miejsca zmieniane są karty i stan programu
     /// </summary>
     public partial class MainWindow : Window
     {

@@ -18,6 +18,7 @@ namespace Program_Testujacy
 {
     /// <summary>
     /// Interaction logic for OknoEgzaminu.xaml
+    /// Okno egzaminacyjne, kluczowe miejsce z interakcją użytkownika
     /// </summary>
     public partial class OknoEgzaminu : UserControl
     {
