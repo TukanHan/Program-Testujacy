@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Program_Testujacy.OknoEgzaminu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Program_Testujacy"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+
+    <Grid>
+        <ScrollViewer HorizontalAlignment="Center" VerticalAlignment="Top" Width="680" VerticalScrollBarVisibility="Auto" Margin="60" Height="360">
+            <StackPanel Name="uchwyt">
+                <TextBlock Name="trescPytania" Width="650" TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque augue eu nulla elementum, quis tincidunt elit eleifend. Integer imperdiet felis in purus ultricies posuere? " FontSize="20" FontFamily="Microsoft JhengHei UI Light" Margin="0,0,0,50" TextAlignment="Center"/>
+                <CheckBox Width="650" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." FontSize="16" FontFamily="Microsoft JhengHei UI Light" Margin="0,5"/>
+
+                <CheckBox  Margin="0,5" Width="650">
+                    <TextBlock Text="Quisque rhoncus ipsum quis mi vulputate, sed mattis arcu luctus. Pellentesque sit amet vulputate justo, sit amet vulputate magna. Vestibulum velit metus, gravida nec euismod nec, porta quis metus. Nulla facilisi" FontSize="16" TextWrapping="Wrap" FontFamily="Microsoft JhengHei UI Light"/>
+                </CheckBox>
+            </StackPanel>
+        </ScrollViewer>
+        <Button x:Name="przyciskPoprzedni" Content="Poprzednie" HorizontalAlignment="Left" Height="25" Margin="60,452,0,0" VerticalAlignment="Top" Width="114" Click="przyciskPoprzedni_Click"/>
+        <Button x:Name="przyciskNastepny" Content="Następny" HorizontalAlignment="Left" Height="25" Margin="626,452,0,0" VerticalAlignment="Top" Width="114" Click="przyciskNastepny_Click"/>
+        <Button x:Name="przyciskZakoncz" Content="Zakończ" HorizontalAlignment="Left" Height="25" Margin="332,452,0,0" VerticalAlignment="Top" Width="114" Click="przyciskZakoncz_Click"/>
+        <TextBlock Name="strony" HorizontalAlignment="Left" Height="25" Margin="60,20,0,0" TextWrapping="Wrap" Text="12 na 32" VerticalAlignment="Top" Width="86" FontSize="18" FontFamily="Microsoft JhengHei UI Light" RenderTransformOrigin="1.287,0.7"/>
+        <TextBlock Name="czas" HorizontalAlignment="Left" Height="25" Margin="670,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" FontSize="20" FontFamily="Microsoft JhengHei UI Light" Text="00:00"/>
+
+    </Grid>
+
+</UserControl>

@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Program_Testujacy.OknoWyborBazy"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Program_Testujacy"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Grid Margin="0,20" Width="750" >
+                <TextBlock Text="Wybierz bazę:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="450" FontSize="36" FontFamily="Microsoft YaHei Light" Margin="25,-1,0,-0.6"/>
+            </Grid>
+            <StackPanel Name="uchwyt">
+                <Grid Margin="0,20" Width="750" Name="SzablonReprezentacjiBazy">
+                    <TextBlock x:Name="nazwaBazy" HorizontalAlignment="Left" Height="36" Margin="23,0,0,0" TextWrapping="Wrap" Text="Nulla quis est a dui" VerticalAlignment="Top" Width="450" FontSize="24" FontFamily="Microsoft JhengHei UI Light"/>
+                    <Separator HorizontalAlignment="Left" Height="13" Margin="23,36,0,0" VerticalAlignment="Top" Width="707" RenderTransformOrigin="0.5,0.5"/>
+                    <TextBlock x:Name="opisBazy" HorizontalAlignment="Left"  Margin="23,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" FontSize="18" FontFamily="Microsoft JhengHei UI Light" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " Foreground="#FF3F3F3F"/>
+                    <TextBlock x:Name="autorBazy" HorizontalAlignment="Left" Height="27" Margin="519,49,0,0" TextWrapping="Wrap" Text="Anonimus" VerticalAlignment="Top" Width="237" FontSize="18" FontFamily="Microsoft JhengHei UI Light" Foreground="#FF3F3F3F"/>
+                    <TextBlock x:Name="czasEgzaminu" HorizontalAlignment="Left" Height="23" Margin="519,76,0,0" TextWrapping="Wrap" Text="Czas: 15 min" VerticalAlignment="Top" Width="247" FontSize="14" FontFamily="Microsoft JhengHei UI Light" Foreground="#FF3F3F3F"/>
+                    <TextBlock x:Name="liczbaPytan" HorizontalAlignment="Left" Height="23" Margin="519,99,0,0" TextWrapping="Wrap" Text="Liczba pytań: 20" VerticalAlignment="Top" Width="247" FontSize="14" FontFamily="Microsoft JhengHei UI Light" Foreground="#FF3F3F3F"/>
+                    <Button x:Name="przyciskWybierz" Content="Zacznij Egzamin" HorizontalAlignment="Left" Height="24" Margin="519,122,0,0" VerticalAlignment="Top" Width="139"/>
+                </Grid>
+            </StackPanel>
+            <Grid Margin="0,20" Width="750" Height="50" >
+                <Button x:Name="przyciskWyjscia" Content="Zakończ" HorizontalAlignment="Left" Height="34"  VerticalAlignment="Top" Width="159" Margin="176,0,0,0" FontSize="14" Click="przyciskWyjscia_Click"/>
+                <Button x:Name="przyciskOProgramie" Content="O Programie" HorizontalAlignment="Left" Height="34"  VerticalAlignment="Top" Width="159" Margin="404,0,0,0" FontSize="14" Click="przyciskOProgramie_Click"/>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

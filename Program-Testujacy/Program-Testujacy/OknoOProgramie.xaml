@@ -1,0 +1,31 @@
+﻿<Window x:Class="Program_Testujacy.OknoOProgramie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Program_Testujacy"
+        mc:Ignorable="d"
+        Title="O Programie" Height="300" Width="300">
+
+    <Window.Resources>
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="27" Margin="28,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" FontFamily="Microsoft JhengHei UI Light" FontSize="20"><Run Text="Program Testujący "/><Run Text="v "/><Run Text="2"/><Run Text=".0"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="74" Margin="28,125,0,0" TextWrapping="Wrap" Text="Niekomercyjny program zaprograowany w celach edukacyjnych  o otwartym kodzie źródłowym dostępnym pod:" VerticalAlignment="Top" Width="233" FontFamily="Microsoft JhengHei UI Light" FontSize="14"/>
+        <Button Content="github.com/TukanHan" HorizontalAlignment="Left" Height="29" Margin="28,204,0,0" VerticalAlignment="Top" Width="191" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" FontFamily="Microsoft YaHei Light" Foreground="#FF1D5AC2" Style="{StaticResource MyButtonStyle}" Tag="github.com/TukanHan" Click="Hiperlacze"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="28,59,0,0" TextWrapping="Wrap" Text="Autor: TukanHan" VerticalAlignment="Top" Width="233" FontFamily="Microsoft JhengHei UI Light" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="28,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233" FontFamily="Microsoft JhengHei UI Light" FontSize="16"><Run Text="Kompilacja: "/><Run Text="7"/><Run Text=".9.2017"/></TextBlock>
+    </Grid>
+</Window>
